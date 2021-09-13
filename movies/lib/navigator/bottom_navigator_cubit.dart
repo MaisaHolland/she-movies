@@ -1,0 +1,11 @@
+
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+class BottomNavigatorCubit extends Cubit<int> {
+  BottomNavigatorCubit() : super(0);
+
+  void updateIndex(int index) => emit(index);
+
+  void getHome() => emit(0);
+
+}

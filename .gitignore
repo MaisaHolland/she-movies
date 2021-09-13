@@ -1,0 +1,6 @@
+
+*.xml
+.idea/she-movies.iml
+*.lock
+data/.metadata
+main/.metadata
