@@ -24,7 +24,7 @@ class MoviesRepository extends IMoviesRepository {
     }
   }
 
-  Future<List<MovieModel>?>? getMovies(QueryEnum searchType, int page) async {
+  Future<List<MovieModel>> getMovies(QueryEnum searchType, int page) async {
     var type = "";
     switch (searchType) {
       case QueryEnum.POPULAR:
@@ -38,13 +38,17 @@ class MoviesRepository extends IMoviesRepository {
         break;
     }
     try {
+      var pageString = page.toString();
+      var url = "${api.baseUrl}movie/$type?api_key=${api.apiKey}&language=en-US&page=$pageString";
+      print(url);
       Response response = await dio.get(
-          "${api.baseUrl}movie/$type?api_key=${api.apiKey}&language=en-US&page=${page.toString()}");
+          url);
       var movieList = (response.data["results"] as List)
           .map((movie) => MovieModel.fromJson(movie))
           .toList();
       return movieList;
     } on DioError catch (e) {
+      print(e);
       throw e.message;
     }
   }

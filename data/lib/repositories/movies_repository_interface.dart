@@ -7,7 +7,7 @@ abstract class IMoviesRepository{
 
   Future<List<MovieModel>> getMoviesByFilter({int page = 1});
 
-  Future<List<MovieModel>?>? getMovies(QueryEnum searchType, int page);
+  Future<List<MovieModel>> getMovies(QueryEnum searchType, int page);
 
   // Future<List<DirectorModel>> getFemaleDirectors();
 

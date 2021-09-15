@@ -1,0 +1,59 @@
+[
+  {
+    "adult": false,
+    "backdrop_path": "/rWrvcsrvISKXdMOzCdkvU3Jtg0j.jpg",
+    "genre_ids": [
+      53,
+      80,
+      18
+    ],
+    "id": 582014,
+    "original_language": "en",
+    "original_title": "Promising Young Woman",
+    "overview": "A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who crossed her path.",
+    "popularity": 33.842,
+    "poster_path": "/hNPwomKbMyOPXqPDqkfz34mK19p.jpg",
+    "release_date": "2020-12-13",
+    "title": "Promising Young Woman",
+    "video": false,
+    "vote_average": 7.6,
+    "vote_count": 1477
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/foFq1RZWQIgFuCQ0nyYccywjFyX.jpg",
+    "genre_ids": [
+      18,
+      10749
+    ],
+    "id": 531428,
+    "original_language": "fr",
+    "original_title": "Portrait de la jeune fille en feu",
+    "overview": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
+    "popularity": 19.018,
+    "poster_path": "/2LquGwEhbg3soxSCs9VNyh5VJd9.jpg",
+    "release_date": "2019-06-17",
+    "title": "Portrait of a Lady on Fire",
+    "video": false,
+    "vote_average": 8.3,
+    "vote_count": 1507
+  },
+  {
+    "adult": false,
+    "backdrop_path": "/8e0ETQmrgcP6R8TaVjd7o9NCGj9.jpg",
+    "genre_ids": [
+      18
+    ],
+    "id": 517814,
+    "original_language": "ar",
+    "original_title": "کفرناحوم",
+    "overview": "Zain, a 12-year-old boy scrambling to survive on the streets of Beirut, sues his parents for having brought him into such an unjust world, where being a refugee with no documents means that your rights can easily be denied.",
+    "popularity": 15.504,
+    "poster_path": "/mFnfTVADj8yOxwzprYOmTPselk8.jpg",
+    "release_date": "2018-10-06",
+    "title": "Capernaum",
+    "video": false,
+    "vote_average": 8.2,
+    "vote_count": 1112
+  }
+]

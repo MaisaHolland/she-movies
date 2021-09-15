@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:movies/favorites/favorites_view.dart';
-import 'package:movies/home/home_view.dart';
+import 'package:movies/views/favorites/favorites_view.dart';
+import 'package:movies/views/home/home_view.dart';
 
 import 'bottom_navigator_cubit.dart';
 
@@ -35,23 +35,23 @@ class _BottomNavWidgetState extends State<BottomNavWidget> {
 
   Widget _buildBottomNav() {
     return BottomNavigationBar(
+      elevation: 10,
+      iconSize: 40,
       selectedFontSize: 0,
-      backgroundColor: Colors.deepPurple,
-      selectedItemColor: Colors.yellow,
+      backgroundColor: Colors.grey.shade700,
+      selectedItemColor: Colors.white,
       currentIndex: context.read<BottomNavigatorCubit>().state,
       type: BottomNavigationBarType.fixed,
       onTap: _getChangeBottomNav,
       items: [
         BottomNavigationBarItem(
             icon: Icon(
-              Icons.local_movies_rounded,
-              size: 40,
+              Icons.local_movies_outlined,
             ),
             label: "Home"),
         BottomNavigationBarItem(
             icon: Icon(
-              Icons.favorite_rounded,
-              size: 40,
+              Icons.favorite_border_rounded,
             ),
             label: "Favorites"),
       ],

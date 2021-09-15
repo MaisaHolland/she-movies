@@ -28,18 +28,19 @@ class MovieModel {
         this.voteCount});
 
   MovieModel.fromJson(Map<String, dynamic> json) {
-    backdropPath = json['backdrop_path'];
+    var baseImageUrl = "http://image.tmdb.org/t/p/w500";
+    backdropPath = baseImageUrl+json['backdrop_path'];
     genreIds = json['genre_ids'].cast<int>();
-    id = json['id'];
+    id = int.parse(json['id'].toString());
     originalLanguage = json['original_language'];
     originalTitle = json['original_title'];
     overview = json['overview'];
-    popularity = json['popularity'];
+    popularity = double.parse(json['popularity'].toString());
     posterPath = json['poster_path'];
     releaseDate = json['release_date'];
     title = json['title'];
-    voteAverage = json['vote_average'];
-    voteCount = json['vote_count'];
+    voteAverage = double.parse(json['vote_average'].toString());
+    voteCount = int.parse(json['vote_count'].toString());
   }
 
   Map<String, dynamic> toJson() {
